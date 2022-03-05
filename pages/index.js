@@ -1,8 +1,9 @@
+import HomeHeader from "../components/homeheader";
 
 export default function Home() {
   return (
     <>
-      <p>テスト</p>
+      <HomeHeader />
     </>
   )
 }
