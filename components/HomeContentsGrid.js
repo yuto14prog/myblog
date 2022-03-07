@@ -8,7 +8,9 @@ export default function HomeContentsGrid({ content }) {
         {content.map((content) => (
           <li key={content.id}>
             <Link href={`/blog/${content.id}`}>
-              <a><HomeContentTile heroImage={content.heroImage} title={content.title} description={content.description} publishedAt={content.publishedAt} /></a>
+              <a>
+                <HomeContentTile heroImage={content.heroImage} title={content.title} description={content.description} publishedAt={content.publishedAt} />
+              </a>
             </Link>
           </li>
         ))}
