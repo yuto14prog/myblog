@@ -18,9 +18,9 @@ export default function HomeContentTile({ heroImage, title, description, publish
           height={240}
         />
       )}
-      <div className=' p-2'>
-        <h2>{title}</h2>
-        <h3>{description}</h3>
+      <div className='py-2 px-4'>
+        <h2 className='text-2xl'>{title}</h2>
+        <p className='text-base my-3'>{description}</p>
         <p className='text-right'>{publishedAt}</p>
       </div>
     </div>
