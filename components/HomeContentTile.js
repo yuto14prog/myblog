@@ -21,7 +21,7 @@ export default function HomeContentTile({ heroImage, title, description, publish
       <div className=' p-2'>
         <h2>{title}</h2>
         <h3>{description}</h3>
-        <p className=' text-right'>{publishedAt}</p>
+        <p className='text-right'>{publishedAt}</p>
       </div>
     </div>
   );
