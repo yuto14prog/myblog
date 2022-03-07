@@ -1,10 +1,16 @@
 import { client } from "../../libs/client";
 
-export default function BlogArticlePage() {
+export default function BlogArticlePage({ content }) {
   return (
-    <div>
-      Enter
-    </div>
+    <main>
+      <h1>{content.title}</h1>
+      <h3>{content.publishedAt}</h3>
+      <div
+        dangerouslySetInnerHTML={{
+          __html: `${content.body}`
+        }}
+      />
+    </main>
   );
 }
 
@@ -21,7 +27,7 @@ export const getStaticProps = async (context) => {
 
   return {
     props: {
-      blog: data
+      content: data
     }
   }
 }
