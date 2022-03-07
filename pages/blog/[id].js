@@ -1,9 +1,11 @@
 import Footer from "../../components/Footer";
+import Header from "../../components/Header";
 import { client } from "../../libs/client";
 
 export default function BlogArticlePage({ content }) {
   return (
     <>
+      <Header />
       <main className="bg-background py-14">
         <div className="text-center">
           <h1 className="mb-8 mt-14">{content.title}</h1>

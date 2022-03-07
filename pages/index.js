@@ -6,7 +6,7 @@ import { client } from "../libs/client";
 export default function Home({ blog }) {
   return (
     <>
-      <Header />
+      <Header home />
       <HomeContentsGrid content={blog} />
       <Footer home words='ver. 1.0.0' />
     </>
