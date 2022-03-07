@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import { name } from './HomeHeaderTitle';
 
 export default function UpperHeader() {
   return (
@@ -10,8 +11,7 @@ export default function UpperHeader() {
         width={50}
         alt='アイコン'
       />
-      <h1 className='ml-3 text-2xl'>mamesuke</h1>
-      <h2 className='ml-3 text-base'>～私の日記という名のブログ～</h2>
+      <h1 className='ml-3 text-2xl font-title'>{name}</h1>
     </header>
   );
 }
