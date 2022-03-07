@@ -4,7 +4,7 @@ export default function Footer({ words, home }) {
   return (
     <footer className='py-7 text-center'>
       {home ? (
-        <p>{words}</p>
+        <p className='text-base'>{words}</p>
       ) : (
         <Link href='/'>
           <a>{words}</a>

@@ -11,7 +11,7 @@ export default function UpperHeader() {
         alt='アイコン'
       />
       <h1 className='ml-3 text-2xl'>mamesuke</h1>
-      <h2 className='ml-3'>～私の日記という名のブログ～</h2>
+      <h2 className='ml-3 text-base'>～私の日記という名のブログ～</h2>
     </header>
   );
 }
