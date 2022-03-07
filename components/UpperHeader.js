@@ -6,11 +6,11 @@ export default function UpperHeader() {
       <Image
         priority
         src='/icon.png'
-        height={60}
-        width={60}
+        height={50}
+        width={50}
         alt='アイコン'
       />
-      <h1 className='ml-3'>mamesuke</h1>
+      <h1 className='ml-3 text-2xl'>mamesuke</h1>
       <h2 className='ml-3'>～私の日記という名のブログ～</h2>
     </header>
   );
