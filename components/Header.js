@@ -1,25 +1,13 @@
-import HomeHeaderTitle from "./HomeHeaderTitle";
-import Image from 'next/image';
+import HomeHeader from "./homeheader";
+import UpperHeader from "./UpperHeader";
 
 export default function Header({ home }) {
   return (
     <>
       {home ? (
-        <header className='bg-bgImage'>
-          <HomeHeaderTitle />
-        </header>
+        <HomeHeader />
       ) : (
-        <header className='flex row items-center justify-center my-4'>
-          <Image
-            priority
-            src='/icon.png'
-            height={60}
-            width={60}
-            alt='アイコン'
-          />
-          <h1 className='ml-3'>mamesuke</h1>
-          <h2 className='ml-3'>～私の日記という名のブログ～</h2>
-        </header>
+        <UpperHeader />
       )}
     </>
   );
