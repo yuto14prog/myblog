@@ -1,16 +1,23 @@
+import Footer from "../../components/Footer";
 import { client } from "../../libs/client";
 
 export default function BlogArticlePage({ content }) {
   return (
-    <main>
-      <h1>{content.title}</h1>
-      <h3>{content.publishedAt}</h3>
-      <div
-        dangerouslySetInnerHTML={{
-          __html: `${content.body}`
-        }}
-      />
-    </main>
+    <>
+      <main className="bg-background py-14">
+        <div className="text-center">
+          <h1 className="mb-8 mt-14">{content.title}</h1>
+          <h3>{content.publishedAt} に公開</h3>
+        </div>
+        <div
+          dangerouslySetInnerHTML={{
+            __html: `${content.body}`
+          }}
+          className='max-w-5xl m-auto bg-white p-12 rounded-3xl mt-14'
+        />
+      </main>
+      <Footer words='Back to Home' />
+    </>
   );
 }
 
