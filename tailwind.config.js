@@ -7,7 +7,10 @@ module.exports = {
     extend: {
       backgroundImage: {
         'bgImage': "url('/bgImage.png')",
-      }
+      },
+      colors: {
+        background: '#F1F3F4',
+      },
     },
   },
   plugins: [],
