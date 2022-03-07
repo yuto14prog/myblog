@@ -1,4 +1,5 @@
 import HomeContentTile from "./HomeContentTile";
+import Link from 'next/link';
 
 export default function HomeContentsGrid({ content }) {
   return (
@@ -6,7 +7,9 @@ export default function HomeContentsGrid({ content }) {
       <ul className="max-w-max mx-auto grid grid-cols-3 gap-10">
         {content.map((content) => (
           <li key={content.id}>
-            <HomeContentTile heroImage={content.heroImage} title={content.title} description={content.description} publishedAt={content.publishedAt} />
+            <Link href={`/blog/${content.id}`}>
+              <a><HomeContentTile heroImage={content.heroImage} title={content.title} description={content.description} publishedAt={content.publishedAt} /></a>
+            </Link>
           </li>
         ))}
       </ul>
