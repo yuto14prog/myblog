@@ -1,18 +1,13 @@
 import Footer from "../components/Footer";
 import HomeHeader from "../components/homeheader";
+import HomeContentsGrid from "../components/HomeContentsGrid";
 import { client } from "../libs/client";
 
 export default function Home({ blog }) {
   return (
     <>
       <HomeHeader />
-      <div>
-        <ul>
-          {blog.map((blog) => (
-            <li key={blog.id}>{blog.title}</li>
-          ))}
-        </ul>
-      </div>
+      <HomeContentsGrid content={blog} />
       <Footer home words='ver. 1.0.0' />
     </>
   )
