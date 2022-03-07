@@ -8,7 +8,7 @@ dayjs.extend(timezone);
 
 export default function HomeContentTile({ heroImage, title, description, publishedAt }) {
   return (
-    <div className='bg-white drop-shadow-xl'>
+    <div className='bg-white drop-shadow-xl max-w-xs'>
       {heroImage ? (
         <Image
           src={heroImage.url}
