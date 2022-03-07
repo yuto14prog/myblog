@@ -1,4 +1,4 @@
-import HomeTitle from "./HomeTitle";
+import HomeHeaderTitle from "./HomeHeaderTitle";
 import Image from 'next/image';
 
 export default function Header({ home }) {
@@ -6,7 +6,7 @@ export default function Header({ home }) {
     <>
       {home ? (
         <header className='bg-bgImage'>
-          <HomeTitle />
+          <HomeHeaderTitle />
         </header>
       ) : (
         <header className='flex row items-center justify-center my-4'>

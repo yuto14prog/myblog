@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-export default function HomeTitle() {
+export default function HomeHeaderTitle() {
   return (
     <div className='flex flex-col items-center pt-16'>
       <Image
