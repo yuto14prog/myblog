@@ -1,6 +1,6 @@
 import HomeTitle from "./HomeTitle";
 
-export default function HomeHeader() {
+export default function Header() {
   return (
     <header className='bg-bgImage'>
       <HomeTitle />

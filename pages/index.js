@@ -1,12 +1,12 @@
 import Footer from "../components/Footer";
-import HomeHeader from "../components/homeheader";
+import Header from "../components/Header";
 import HomeContentsGrid from "../components/HomeContentsGrid";
 import { client } from "../libs/client";
 
 export default function Home({ blog }) {
   return (
     <>
-      <HomeHeader />
+      <Header />
       <HomeContentsGrid content={blog} />
       <Footer home words='ver. 1.0.0' />
     </>
