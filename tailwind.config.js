@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         mplus: ['M PLUS 1p'],
+        title: ['Sansita Swashed'],
       },
       backgroundImage: {
         'bgImage': "url('/bgImage.png')",

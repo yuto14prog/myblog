@@ -2,11 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap');
-
 html,
 body {
-  font-family: 'mplus';
   color: #525252;
 }
 h1 {
