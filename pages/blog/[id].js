@@ -1,6 +1,4 @@
-import BlogArticleContent from "../../components/BlogArticleContent";
-import Footer from "../../components/Footer";
-import Header from "../../components/Header";
+import { Footer, Header, BlogArticleContent } from "../../components/index";
 import { client } from "../../libs/client";
 
 export default function BlogArticlePage({ content }) {

@@ -1,4 +1,4 @@
-import HomeContentTile from "./HomeContentTile";
+import { HomeContentTile } from "./index";
 import Link from 'next/link';
 
 export default function HomeContentsGrid({ content }) {

@@ -1,6 +1,4 @@
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import HomeContentsGrid from "../components/HomeContentsGrid";
+import { Footer, Header, HomeContentsGrid } from "../components/index";
 import { client } from "../libs/client";
 
 export default function Home({ blog }) {

@@ -1,4 +1,4 @@
-import HomeHeaderTitle from "./HomeHeaderTitle";
+import { HomeHeaderTitle } from "./index";
 
 export default function HomeHeader() {
   return (

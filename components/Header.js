@@ -1,5 +1,4 @@
-import HomeHeader from "./homeheader";
-import UpperHeader from "./UpperHeader";
+import { HomeHeader, UpperHeader } from "./index";
 
 export default function Header({ home }) {
   return (
