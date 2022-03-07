@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        mplus: ['M PLUS 1p'],
+      },
       backgroundImage: {
         'bgImage': "url('/bgImage.png')",
       },
