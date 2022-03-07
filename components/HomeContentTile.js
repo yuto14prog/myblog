@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function HomeContentTile({ heroImage, title, description, publishedAt }) {
   return (
-    <div>
+    <div className='bg-white drop-shadow-xl'>
       {heroImage ? (
         <Image
           src={heroImage.url}
@@ -18,9 +18,11 @@ export default function HomeContentTile({ heroImage, title, description, publish
           height={240}
         />
       )}
-      <h2>{title}</h2>
-      <h3>{description}</h3>
-      <h3>{publishedAt}</h3>
+      <div className=' p-2'>
+        <h2>{title}</h2>
+        <h3>{description}</h3>
+        <p className=' text-right'>{publishedAt}</p>
+      </div>
     </div>
   );
 }
