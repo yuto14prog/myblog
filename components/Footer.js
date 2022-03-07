@@ -7,7 +7,7 @@ export default function Footer({ words, home }) {
         <p className='text-base'>{words}</p>
       ) : (
         <Link href='/'>
-          <a>{words}</a>
+          <a className='text-text'>{words}</a>
         </Link>
       )}
     </footer>
