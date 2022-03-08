@@ -6,7 +6,7 @@ export default function BlogArticlePage({ content }) {
     <>
       <Header />
       <BlogArticleContent content={content} />
-      <Footer words='Back to Home' />
+      <Footer />
     </>
   );
 }

@@ -6,7 +6,7 @@ export default function Home({ blog }) {
     <>
       <Header home />
       <HomeContentsGrid content={blog} />
-      <Footer home words='ver. 1.0.0' />
+      <Footer home />
     </>
   )
 }

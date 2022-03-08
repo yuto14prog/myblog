@@ -4,10 +4,10 @@ export default function Footer({ words, home }) {
   return (
     <footer className='py-7 text-center'>
       {home ? (
-        <p className='text-base'>{words}</p>
+        <p className='text-base'>Copyright &copy; yuto14prog</p>
       ) : (
         <Link href='/'>
-          <a className='text-text'>{words}</a>
+          <a className='text-text'>Back to Home</a>
         </Link>
       )}
     </footer>
