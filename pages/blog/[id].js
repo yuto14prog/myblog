@@ -1,13 +1,13 @@
-import { Footer, Header, BlogArticleContent } from "../../components/index";
+import { Footer, Header, BlogArticleContent, Layout } from "../../components/index";
 import { client } from "../../libs/client";
 
 export default function BlogArticlePage({ content }) {
   return (
-    <>
+    <Layout>
       <Header />
       <BlogArticleContent content={content} />
       <Footer />
-    </>
+    </Layout>
   );
 }
 
