@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 export const name = "yuto14prog"
 
 export default function HomeHeaderTitle() {

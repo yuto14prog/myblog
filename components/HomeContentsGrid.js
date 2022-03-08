@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function HomeContentsGrid({ content }) {
   return (
     <main className="py-20 bg-background">
-      <ul className="max-w-max mx-auto grid grid-cols-3 gap-10 font-mplus">
+      <ul className="max-w-max mx-auto grid lg:grid-cols-3 md:grid-cols-2 lg:gap-10 md:gap-9 grid-cols-1 gap-7 font-mplus">
         {content.map((content) => (
           <li key={content.id}>
             <Link href={`/blog/${content.id}`}>
