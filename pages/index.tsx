@@ -1,7 +1,12 @@
 import { Footer, Header, HomeContentsGrid, Layout } from "../components/index";
 import { client } from "../libs/client";
+import { Blog } from "../types/blog";
 
-export default function Home({ blog }) {
+type Props = {
+  blog: Blog[]
+}
+
+export default function Home({ blog }: Props) {
   return (
     <Layout>
       <Header home />
