@@ -1,11 +1,16 @@
 import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc';
 import timezone from 'dayjs/plugin/timezone';
+import { Blog } from '../types/blog';
+
+type Props = {
+  content: Blog
+}
 
 dayjs.extend(utc);
 dayjs.extend(timezone);
 
-export default function BlogArticleContent({ content }) {
+export default function BlogArticleContent({ content }: Props) {
   return (
     <main className="bg-background py-14">
       <div className="text-center">
