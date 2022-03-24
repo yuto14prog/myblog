@@ -1,6 +1,10 @@
 import Link from 'next/link';
 
-export default function Footer({ home }) {
+type Footer = {
+  home?: boolean
+}
+
+export default function Footer({ home }: Footer) {
   return (
     <footer className='py-7 text-center'>
       {home ? (
