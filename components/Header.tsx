@@ -1,6 +1,10 @@
 import { HomeHeader, UpperHeader } from "./index";
 
-export default function Header({ home }) {
+type Header = {
+  home?: boolean
+}
+
+export default function Header({ home }: Header) {
   return (
     <>
       {home ? (
