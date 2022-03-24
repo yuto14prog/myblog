@@ -1,7 +1,12 @@
 import Head from 'next/head'
+import { DetailedHTMLProps, HTMLAttributes } from 'react'
 import { name } from './HomeHeaderTitle'
 
-export default function Layout({ children }) {
+type LayoutProps = {
+  children: DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>
+}
+
+export default function Layout({ children }: LayoutProps) {
   return (
     <>
       <Head>
