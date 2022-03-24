@@ -3,10 +3,21 @@ import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc';
 import timezone from 'dayjs/plugin/timezone';
 
+type HomeContentTile = {
+  heroImage: {
+    url: string
+    height: number
+    width: number
+  }
+  title: string
+  description: string
+  publishedAt: string
+}
+
 dayjs.extend(utc);
 dayjs.extend(timezone);
 
-export default function HomeContentTile({ heroImage, title, description, publishedAt }) {
+export default function HomeContentTile({ heroImage, title, description, publishedAt }: HomeContentTile) {
   return (
     <div className='bg-white drop-shadow-xl max-w-xs'>
       {heroImage ? (
